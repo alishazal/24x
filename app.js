@@ -12,7 +12,8 @@ var http = require('http').Server(app);
 
 var io = require('socket.io')(http);  //pass a http.Server instance
 
-http.listen(3000);
+var port = process.env.PORT || '3000'
+http.listen(port);
 // server.listen(3001);
 
 // const io = require('socket.io')(http);
