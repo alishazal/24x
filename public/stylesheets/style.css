@@ -211,3 +211,12 @@ button:hover {
 	background-color: azure;
 	padding-left: 10px;
 }
+
+#prompt-display{
+	color:rgb(236, 220, 247);
+}
+
+#start{
+	color:rgb(236, 220, 247);	
+	margin-bottom: 4%;
+}
