@@ -1,1 +1,41 @@
-<h1>Speaker Form</h1>
+<header>
+  <span id="homeNav" class="nav-item">HOME</span>
+  <span id="aboutNav" class="nav-item">HOW WE HELP</span>
+  <span id="aboutNav" class="nav-item">OUR STORIES</span>
+  <span id="aboutNav" class="nav-item">ABOUT</span>
+</header>
+
+<img src="/images/Logo.png" width="100px">
+
+<div class="speaker-container">
+<div class="form-heading">You chose to be a storyteller...</div>
+
+<form method="GET" action="\chat">
+  <input type="hidden" name="who" value="speaker" />
+<div class="form-questions">Please indicate your gender preference: </div>
+<div class="form-questions">
+	<label class="radio-inline"><input type="radio" name="optradio-speaker"><img src="/images/male.png" width="85px" /></label>
+	<label class="radio-inline"><input type="radio" name="optradio-speaker"><img src="/images/female.png" width="80px" /></label>
+	<label class="radio-inline"><input type="radio" name="optradio-speaker"><img src="/images/other.png" width="80px" /></label>
+</div>
+<div class="form-questions">Please indicate your age preference: </div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Age Group
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">15 - 24</a>
+    <a class="dropdown-item" href="#">25 - 40</a>
+    <a class="dropdown-item" href="#">41 - 65</a>
+    <a class="dropdown-item" href="#">66 and older</a>
+  </div>
+</div>
+
+<div class="form-button-container">
+  <button type="submit" id="speakerChat">Start Chat</button>
+</div>
+</form>
+
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/listener.js"></script>

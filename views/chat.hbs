@@ -1,1 +1,40 @@
-<h1>Chat Page</h1>
+<header>
+	<span id="homeNav" class="nav-item">HOME</span>
+	<span id="aboutNav" class="nav-item">HOW WE HELP</span>
+	<span id="aboutNav" class="nav-item">OUR STORIES</span>
+	<span id="aboutNav" class="nav-item">ABOUT</span>
+</header>
+<img src="/images/Logo.png" width="100px">
+<div id="appContainer">
+
+	<div id="mainContent" class="container flex-grow-1 flex-column ">
+
+		<section id="login" class="">
+			<h2 id="prompt-display"></h2>
+			<form id="loginForm" class="flex text-center">
+				<input type="text" name="username " id="usernameInput" value="{{who}}" class="flex-grow-1">
+				{{!-- <button id="loginBtn">Chat!</button> --}}
+			</form>
+		</section>
+
+		<section id="chat" class="flex-grow-1 flex-column hidden">
+			<div class="container-small">
+				<div id="messagesList" class="flex-grow-1">
+
+				</div>
+			</div>
+			<form id="messageForm" class="flex text-center">
+				<input type="text" name="message " id="messageInput" class="flex-grow-1">
+				<button id="sendBtn">Send</button>
+			</form>
+		</section>
+
+
+
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+<script src="/js/chat.js "></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/listener.js"></script>

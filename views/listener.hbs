@@ -1,19 +1,54 @@
-<h1>Listener Form</h1>
+<header>
+  <span id="homeNav" class="nav-item">HOME</span>
+  <span id="aboutNav" class="nav-item">HOW WE HELP</span>
+  <span id="aboutNav" class="nav-item">OUR STORIES</span>
+  <span id="aboutNav" class="nav-item">ABOUT</span>
+</header>
 
-<form>
-    <div class="form-group">
-        <label for="screenName">Screen Name</label>
-        <input type="text" class="form-control" id="screenName" aria-describedby="screenName" placeholder="helpfulperson25">
+<img src="/images/Logo.png" width="100px">
+
+</div class="listener-container">
+
+  <div class="form-heading">You chose to be a listener...</div>
+
+  <form method="GET" action="\chat">
+      <input type="hidden" name="who" value="listener" />
+  <div class="form-questions">Please indicate your gender: </div>
+  <div class="form-questions">
+    <label class="radio-inline">
+      <input type="radio" name="optradio-speaker">
+      <img src="/images/male.png" width="85px" />
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio-speaker">
+      <img src="/images/female.png" width="80px" />
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio-speaker">
+      <img src="/images/other.png" width="80px" />
+    </label>
+  </div>
+  <div class="form-questions">Please indicate your age: </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Age Group
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">15 - 24</a>
+      <a class="dropdown-item" href="#">25 - 40</a>
+      <a class="dropdown-item" href="#">41 - 65</a>
+      <a class="dropdown-item" href="#">66 and older</a>
     </div>
-    <div class="form-group">
-        <label for="age">Age</label>
-        <select class="form-control" id="age">
-            <option>18-24</option>
-            <option>25-34</option>
-            <option>35-49</option>
-            <option>50-64</option>
-            <option>65+</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+
+<div class="form-button-container">
+  <button type="submit" id="listenerChat">Start Chat</button>
+</div>
+
 </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/listener.js"></script>
